@@ -8,7 +8,7 @@ rep162="Les fonctions int et float sont des fonctions de conversion de type."
 rep182="La fonction type permet de connaître le type d'une expression. (De savoir ce que l'on manipule comme donnée dans une variable.)"
 rep192="En affectant la valeur a=20 il ne se passe rien ! L'expression d'alternative ne retourne aucune valeur puisque le cas a<=100 n'est pas prévu."
 
-#from math import *    
+from math import *    
 
 def test_exo_1_13():
     print("1. Enregistrer la partie")
