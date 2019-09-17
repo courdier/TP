@@ -76,17 +76,21 @@ def test_exo_2_6():
     # La variable nbcoup contient le nombre d'essais effectués par l'utilisateur
     # On l'initialise a 1 car on a demandé a l'utilisateur une première proposition
     nbcoup = 1
-
+    borneinf = 0; bornesup = 100
+    
     # Tant que la proposition est différente du nombre à trouver
     while proposition != nombre :
         # On affiche un message selon que la proposition est plus petite ou plus grande
         # que le nombre à trouver
         if proposition < nombre :
             print (" Trop petit ")
+            borneinf = min (borneinf, nombre)
         else :
             print (" Trop grand ")
+            bornesup = max (bornesup, nombre)
         # Puis avant de boucler on saisie une nouvelle proposition
-        proposition = int( input (" Proposer un nombre entre 1 et 100 : "))
+        proposition = int( input (" Proposez un nombre entre %d et %d : " % (borneinf, bornesup, )))
+
         # ce qui correspond à un essai de plus
         nbcoup = nbcoup +1
         # Lorsqu'on sort de la boucle c'est que la proposition est égale au nombre a trouver
@@ -131,27 +135,6 @@ def test_exo_2_8():
     print (" contient : ", nbvoy , " voyelles .")
 
 def test_exo_2_9():
-    phrase = input (" Donner une phrase : ")
-
-    # On parcourt la séquence de caractères phrase :
-    # Pour chaque caractère c
-    # si c'est une voyelle on l'affiche
-    # sinon si c'est une lettre on affiche * a la place
-    # sinon on affiche le caractère c
-
-    for c in phrase :
-        # On teste si c est une voyelle
-        if c in " aeiouyAEIOUY ":
-            print (c, end="")
-        else :
-            # Ca n'est pas une voyelle mais est-ce une lettre ?
-            if (c > "A" and c <= "Z") or (c >= "a" and c <= "z"):
-                print ("*", end="")
-            else :
-                # Ca n'est ni une voyelle ni une lettre
-                print (c, end="")
-    
-def test_exo_2_10():
     # programme brin ADN
     print ("Un brin d'ADN est une séquence de lettre composée uniquement avec des caractères A, C, G et T")
     brin = input ("Donner une séquence de lettres qui représente un brin d'ADN : ")
@@ -184,3 +167,25 @@ def test_exo_2_10():
         print ( brin )
         print ("est : ")
         print ( brin2)
+        
+def test_exo_2_10():
+    phrase = input (" Donner une phrase : ")
+
+    # On parcourt la séquence de caractères phrase :
+    # Pour chaque caractère c
+    # si c'est une voyelle on l'affiche
+    # sinon si c'est une lettre on affiche * a la place
+    # sinon on affiche le caractère c
+
+    for c in phrase :
+        # On teste si c est une voyelle
+        if c in " aeiouyAEIOUY ":
+            print (c, end="")
+        else :
+            # Ca n'est pas une voyelle mais est-ce une lettre ?
+            if (c > "A" and c <= "Z") or (c >= "a" and c <= "z"):
+                print ("*", end="")
+            else :
+                # Ca n'est ni une voyelle ni une lettre
+                print (c, end="")
+    
