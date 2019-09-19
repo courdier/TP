@@ -1,3 +1,8 @@
+def test_exo_3_11():
+    couleurs=[]
+    couleurs=couleurs + ['rouge', 'vert', 'bleue']
+    return couleurs
+
 def test_exo_3_2():
     print ("1. indoccur : occurence d'une valeur dans une liste ")
     print ("2. que0et1 : tous les elements ont la valeur 0 ou 1")
@@ -16,11 +21,11 @@ def test_exo_3_2():
 def indoccur_alt (l,v):
     print (" appel de la fonction indoccur(", l, v, ")")
     res = []
-    for i,a in enumerate (l):
+    for indice,element in enumerate (l): #et pas "for a in (l):"
     # enumerate(l): Retourne une sequence dont chaque element est
     # une paire (indice, element) de la liste l
-        if a == v:
-            res. append (i) # équivalent à : res=res+[i]
+        if element == v:
+            res. append (indice) # équivalent à : res=res+[indice]
     return res
 
 # exo 3.4 -------------

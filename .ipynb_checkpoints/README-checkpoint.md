@@ -4,7 +4,7 @@
 
 [TD 2](https://colab.research.google.com/github/courdier/TP/blob/master/TD2/I1-bsg-informatique-td2.ipynb) : Utilisation des boucles "Tantque" et "For"
 
-[TD 3](https://colab.research.google.com/github/courdier/TP/blob/master/TD3/I1-bsg-informatique-td3.ipynb) : Listes et Fonctions
+[TD 3](https://colab.research.google.com/github/courdier/TP/blob/master/TD3/I1-bsg-informatique-td3.ipynb) : Listes et Fonctions - (En cours...)
 
 Suivi :
 https://courdier.pythonanywhere.com/
