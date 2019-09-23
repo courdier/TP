@@ -4,10 +4,10 @@ def test_exo_2_2():
     a = int( input (" Donner la valeur de a : "))
     b = int( input (" Donner la valeur de b : "))
     # On utilise une variable i qui va prendre les valeurs des entiers compris entre a et b
-    # Au départ on initialise i avec la valeur de a
-    i = a
-    # Tant que i n'a pas dépassée la valeur de b
-    while i <= b:
+    # Au départ on initialise i avec la valeur min entre a et b
+    i = min(a,b)
+    # Tantque i n'a pas dépassée la valeur du maximum de a et b
+    while i <= max(a,b):
         # On affiche la valeur de i uniquement si celle-ci vérifie la condition demandée
         if (i%3 != 0) and( (i*i -4) % 7 == 0):
             print (i)
@@ -176,10 +176,10 @@ def test_exo_2_10():
     # si c'est une voyelle on l'affiche
     # sinon si c'est une lettre on affiche * a la place
     # sinon on affiche le caractère c
-
+    voyelles="aeiouyAEIOUY"
     for c in phrase :
         # On teste si c est une voyelle
-        if c in " aeiouyAEIOUY ":
+        if c in voyelles:
             print (c, end="")
         else :
             # Ca n'est pas une voyelle mais est-ce une lettre ?
