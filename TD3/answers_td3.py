@@ -54,7 +54,7 @@ def test_exo_3_3et4():
             print (" Erreur : choix invalide , choisir une valeur [1..3] ")
     if choix == 1:
         tab = [3 ,2 ,1 ,4 ,1 ,1 ,5 ,8 ,3 ,1]
-        val = int(input(" Choisir une valeur du tableau : " + str(tab) + " "))
+        val = int(input(" Choisir une valeur du tableau : " + str(tab) + " : "))
         print(" la valeur ", val, "se trouve aux indices :", indoccur_alt (tab, val), "de ce tableau")
     elif choix == 2:
         if que0et1 ([0 ,0 ,0 ,1 ,0 ,0 ,1]) :
