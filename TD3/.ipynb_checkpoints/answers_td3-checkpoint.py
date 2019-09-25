@@ -18,7 +18,7 @@ def test_exo_3_2():
         print (" appel de que0et1 ([0 ,0 ,0 ,1 ,0 ,0 ,1])")
 
 # exo 3.3 -------------
-def indoccur_alt (l,v):
+def indoccur (l,v):
     print (" appel de la fonction indoccur(", l, v, ")")
     res = []
     for indice,element in enumerate (l): #et pas "for a in (l):"
@@ -35,11 +35,12 @@ def indoccur_alt (l,v):
 # Les indices n'ont ici pas d'importance, on peut donc appliquer la
 # boucle for directement sur la collection de valeurs formée par la liste.
 def que0et1 (l):
-    print (" appel de la fonction que0et1(", l,")")
+    print ("appel de la fonction que0et1(", l,")")
     res= True
     for n in l:
         if n != 1 and n != 0 :
             res= False
+            break; # sortie de la boucle plus besoin de regartder les autres items
     return res
 
 # exo 3.3 et 3.4 et 4 -------------
@@ -55,7 +56,7 @@ def test_exo_3_3et4():
     if choix == 1:
         tab = [3 ,2 ,1 ,4 ,1 ,1 ,5 ,8 ,3 ,1]
         val = int(input(" Choisir une valeur du tableau : " + str(tab) + " "))
-        print(" la valeur ", val, "se trouve aux indices :", indoccur_alt (tab, val), "de ce tableau")
+        print(" la valeur ", val, "se trouve aux indices :", indoccur (tab, val), "de ce tableau")
     elif choix == 2:
         if que0et1 ([0 ,0 ,0 ,1 ,0 ,0 ,1]) :
             print (" OUI, cette liste comporte que des 0 et 1")
