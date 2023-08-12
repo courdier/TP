@@ -8,15 +8,6 @@ rep162="Les fonctions int et float sont des fonctions de conversion de type."
 rep182="La fonction type permet de connaître le type d'une expression. (De savoir ce que l'on manipule comme donnée dans une variable.)"
 rep192="En affectant la valeur a=20 il ne se passe rien ! L'expression d'alternative ne retourne aucune valeur puisque le cas a<=100 n'est pas prévu."  
 
-import requests
-def init_exo_1():
-    print("Creation d'une session de suivi sous https://courdier.pythonanywhere.com/records...")
-    exec(requests.get("https://courdier.pythonanywhere.com/get-send-code").content)
-    npt_config = {
-        'session_name': 'python_td1',
-        'session_owner': 'courdier',
-        'sender_name': input("Your name:"),
-    }
 
 def test_exo_1_13():
     print("1. Enregistrer la partie")
