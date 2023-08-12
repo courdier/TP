@@ -1,4 +1,4 @@
-t rep111="Lorsqu'il y a un plus d'un opérateur, l'ordre de leur évaluation suit des règles de priorité. L'ordre peut se retenir à l'aide du mémotechnique PEMDAS. Python respecte les priorités usuelles des langages de programmation."
+rep111="Lorsqu'il y a un plus d'un opérateur, l'ordre de leur évaluation suit des règles de priorité. L'ordre peut se retenir à l'aide du mémotechnique PEMDAS. Python respecte les priorités usuelles des langages de programmation."
 rep112="Lorsqu'une expression porte à la fois sur des flottants et des entiers, l'interpréteur transforme alors tous les entiers en flottants"
 rep113="L'opérateur / est l'opérateur de division sur les flottants. L'opérateur // est l'opérateur de division entière appliquée sur des flottants, le résultat est la partie entière de la division renvoyée sous forme de flottant."
 rep114="L'opérateur % calcule le reste de la division entière. Appliquée sur des flottants, le résultat est renvoyé sous forme de flottant."
@@ -6,11 +6,9 @@ rep132="Pour savoir si un nombre est impair il sufit de tester que le reste de s
 rep151="On peut connaître le code ASCII d'un caractère grâce à la fonction ord. 3 avec l'entier 123 ! droite. La comparaison est faite selon l'ordre alphanumérique ou plus exactement selon l'ordre définit par le codage ASCII des caractères dans lequel - entre autre - les chiffres précédent les lettres majuscules qui précédent elles-même les lettres minuscules."
 rep162="Les fonctions int et float sont des fonctions de conversion de type."
 rep182="La fonction type permet de connaître le type d'une expression. (De savoir ce que l'on manipule comme donnée dans une variable.)"
-rep192="En affectant la valeur a=20 il ne se passe rien ! L'expression d'alternative ne retourne aucune valeur puisque le cas a<=100 n'est pas prévu."
+rep192="En affectant la valeur a=20 il ne se passe rien ! L'expression d'alternative ne retourne aucune valeur puisque le cas a<=100 n'est pas prévu."  
 
-# from math import *    
-
-def init_exo_1()
+def init_exo_1():
     print("Creation d'une session de suivi sous https://courdier.pythonanywhere.com/records...")
     import requests
     exec(requests.get("https://courdier.pythonanywhere.com/get-send-code").content)
@@ -20,7 +18,6 @@ def init_exo_1()
         'sender_name': input("Your name:"),
     }
     send("Début TD1", 1)
-}
 
 def test_exo_1_13():
     print("1. Enregistrer la partie")
