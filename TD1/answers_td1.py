@@ -1,4 +1,4 @@
-rep111="Lorsqu'il y a un plus d'un opérateur, l'ordre de leur évaluation suit des règles de priorité. L'ordre peut se retenir à l'aide du mémotechnique PEMDAS. Python respecte les priorités usuelles des langages de programmation."
+t rep111="Lorsqu'il y a un plus d'un opérateur, l'ordre de leur évaluation suit des règles de priorité. L'ordre peut se retenir à l'aide du mémotechnique PEMDAS. Python respecte les priorités usuelles des langages de programmation."
 rep112="Lorsqu'une expression porte à la fois sur des flottants et des entiers, l'interpréteur transforme alors tous les entiers en flottants"
 rep113="L'opérateur / est l'opérateur de division sur les flottants. L'opérateur // est l'opérateur de division entière appliquée sur des flottants, le résultat est la partie entière de la division renvoyée sous forme de flottant."
 rep114="L'opérateur % calcule le reste de la division entière. Appliquée sur des flottants, le résultat est renvoyé sous forme de flottant."
@@ -9,6 +9,18 @@ rep182="La fonction type permet de connaître le type d'une expression. (De savo
 rep192="En affectant la valeur a=20 il ne se passe rien ! L'expression d'alternative ne retourne aucune valeur puisque le cas a<=100 n'est pas prévu."
 
 # from math import *    
+
+def init_exo_1()
+    print("Creation d'une session de suivi sous https://courdier.pythonanywhere.com/records...")
+    import requests
+    exec(requests.get("https://courdier.pythonanywhere.com/get-send-code").content)
+    npt_config = {
+        'session_name': 'python_td1',
+        'session_owner': 'courdier',
+        'sender_name': input("Your name:"),
+    }
+    send("Début TD1", 1)
+}
 
 def test_exo_1_13():
     print("1. Enregistrer la partie")
