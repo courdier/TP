@@ -8,11 +8,11 @@
 
 # QCMs Python
 
-[Test 1](https://colab.research.google.com/github/courdier/TP/blob/master/Test1.ipynb) : QCM 1
+[Test 1](https://colab.research.google.com/github/courdier/TP/blob/master/Tests_TP_Python/Test1.ipynb) : QCM 1
 
-[Test 2](https://colab.research.google.com/github/courdier/TP/blob/master/test2.ipynb) : QCM 2
+[Test 2](https://colab.research.google.com/github/courdier/TP/blob/master/Tests_TP_Python/test2.ipynb) : QCM 2
 
-[Test 3](https://colab.research.google.com/github/courdier/TP/blob/master/Test3.ipynb) : QCM 3
+[Test 3](https://colab.research.google.com/github/courdier/TP/blob/master/Tests_TP_Python/Test3.ipynb) : QCM 3
 
 
 Suivi :
